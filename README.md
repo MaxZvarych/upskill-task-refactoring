@@ -1,7 +1,10 @@
+# CViewer
 
-This repository contains MERN Stack application which is about looking for a job. You can register your profile as CV and follow new vacancies of various companies.
+## Description
 
-## Requirements
+This repository contains MERN Stack application which is about looking for a job. You can register your profile as CV and follow new vacancies of various companies. Our main idea is to implement many new features ,such as : *Describing new features* . Our implemented features are : *Describing implemented features*.
+
+## Requirements and installation
 
 You should be having these minimum requirements in your system to start working on the project.
 
@@ -54,3 +57,12 @@ yarn start
 yarn install
 yarn start
 ```
+## Use of the project 
+
+*Providing information and screenshots for stakeholders how to use a project, describe possible UX flows that user can navigate through, provide necessary credentials and variables for running project"
+
+## Contributors
+
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = GitHub_username/repository_name"/>
+</a>
