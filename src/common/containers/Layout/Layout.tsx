@@ -25,7 +25,7 @@ const Layout = () => {
         <Switch>
           {routes.list.map((route: ExtendedRouteProps, i: number) => (
             // fallback component is rendered until our main component is loaded
-            <Suspense fallback={<div>Loading</div>}>
+            <Suspense key={i + route.path} fallback={<div>Loading</div>}>
               <RouteWithSubRoutes key={i + route.path} {...route} />
             </Suspense>
           ))}
