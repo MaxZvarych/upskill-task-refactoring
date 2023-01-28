@@ -6,7 +6,7 @@ import InputPasswordField from '../../shared/Input/InputPasswordField';
 import { Button } from '../../shared/Button/Button';
 import { AuthFormComponent } from '../../interfaces/Auth/AuthFormComponent';
 import { useDispatch } from 'react-redux';
-import { signUpLoadAction } from '../../redux/actions/SignUpActions';
+import { signUpLoadAction } from '../../redux/actions/Auth/SignUpActions';
 import { signUpSchema } from '../../utils/validation/signUpSchema';
 import { SwitchBox } from '../../shared/SwitchBox/SwitchBox';
 import { useState } from 'react';

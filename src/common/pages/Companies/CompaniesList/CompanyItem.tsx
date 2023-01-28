@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import nocompany from '../../../../assets/images/no-company.png';
-import { Company } from '../../../interfaces/CompanyModel';
+import { Company } from '../../../interfaces/Models/CompanyModel';
 import moment from 'moment';
 
 interface CompanyItemProps {

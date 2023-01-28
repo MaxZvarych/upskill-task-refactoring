@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Icon from '../Icon/Icon';
 import classNames from 'classnames';
-import { InputFieldProps } from '../../interfaces/InputFieldProps';
+import { InputFieldProps } from '../../interfaces/Props/InputFieldProps';
 
 import './Input.scss';
 

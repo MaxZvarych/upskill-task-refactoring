@@ -6,7 +6,7 @@ import { Pagination } from '../../../components/Pagination/Pagination';
 import { sortByDate } from '../../../constants/sortConsts';
 import { customStyles } from '../../../constants/userConsts';
 import { useFilter } from '../../../hooks/filters/useFilter';
-import { Company } from '../../../interfaces/CompanyModel';
+import { Company } from '../../../interfaces/Models/CompanyModel';
 import { getCompaniesLoadAction } from '../../../redux/actions/Company/CompaniesActions';
 import {
   companiesStateSelector,

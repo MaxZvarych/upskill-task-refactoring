@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Select from 'react-select';
-import { User } from '../../interfaces/UserModel';
+import { User } from '../../interfaces/User/UserModel';
 import { FormikErrors } from 'formik';
 
 interface SelectFieldProps {

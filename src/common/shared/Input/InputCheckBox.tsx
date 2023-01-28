@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputFieldProps } from '../../interfaces/InputFieldProps';
+import { InputFieldProps } from '../../interfaces/Props/InputFieldProps';
 import './Input.scss';
 
 const InputCheckbox = ({

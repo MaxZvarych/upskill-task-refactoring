@@ -1,5 +1,5 @@
 import React from 'react';
-import { Company } from '../../interfaces/CompanyModel';
+import { Company } from '../../interfaces/Models/CompanyModel';
 import { Button } from '../../shared/Button/Button';
 import nocompany from '../../../assets/images/no-company.png';
 import { useHistory } from 'react-router-dom';
