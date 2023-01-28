@@ -63,6 +63,6 @@ yarn start
 
 ## Contributors
 
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = GitHub_username/repository_name"/>
+<a href = "[https://github.com/Tanu-N-Prabhu/Python/graphs/contributors](https://github.com/MaxZvarych)">
+  <img src = "https://avatars.githubusercontent.com/u/56836603?v=4"/>
 </a>
