@@ -74,3 +74,7 @@ yarn start
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 *Adding other licences here*
+
+## Additional Information
+
+*Providing links to this readme on other languages, guidelines how to contribute to project development(optional) , including tests examples and how to run them*
