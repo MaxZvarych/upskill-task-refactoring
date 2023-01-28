@@ -2,24 +2,24 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import noavatar from '../../../../assets/images/no-avatar.png';
-import { CurrentUserInfo } from '../../../components/CurrentUser/CurrentUserInfo';
-import { CurrentUserTags } from '../../../components/CurrentUser/CurrentUserTags';
+import { CurrentUserInfo } from '../../../components/User/CurrentUser/CurrentUserInfo';
+import { CurrentUserTags } from '../../../components/User/CurrentUser/CurrentUserTags';
 import {
   delCurrentUserAction,
   fetchCurrentUserAction,
-} from '../../../redux/actions/CurrentUserActions';
+} from '../../../redux/actions/Profile/CurrentUserActions';
 import {
   getCurrentUserSelector,
   getCurrentUserStateSelector,
   getCurrentUserFollowingSelector,
-} from '../../../redux/selectors/currentUserSelector';
-import { getProfileSelector } from '../../../redux/selectors/profileSelector';
+} from '../../../redux/selectors/Profile/currentUserSelector';
+import { getProfileSelector } from '../../../redux/selectors/Profile/profileSelector';
 import { Loader } from '../../../shared/Loader/Loader';
 import useModal from '../../../hooks/useModal';
 import ModalEditPhoto from '../../../shared/Modal/ModalEditPhoto/ModalEditPhoto';
-import { editPhotoUserSelector } from '../../../redux/selectors/usersSelector';
+import { editPhotoUserSelector } from '../../../redux/selectors/Profile/usersSelector';
 import { MessageNotification } from '../../../shared/MessageNotification/MessageNotification';
-import { CurrentUserFollowing } from '../../../components/CurrentUser/CurrentUserFollowing';
+import { CurrentUserFollowing } from '../../../components/User/CurrentUser/CurrentUserFollowing';
 
 import './Profile.scss';
 import '../UserProfile.scss';

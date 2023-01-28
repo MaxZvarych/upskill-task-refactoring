@@ -1,4 +1,4 @@
-import { StateProps } from '../../interfaces/StateProps';
+import { StateProps } from '../../interfaces/Props/StateProps';
 
 export const getCompanySelector = (state: any) =>
   state.companyReducer.company?.data;

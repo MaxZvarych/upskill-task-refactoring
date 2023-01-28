@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import nocompany from '../../../assets/images/no-company.png';
-import { Vacancy } from '../../interfaces/VacancyModel';
+import { Vacancy } from '../../interfaces/Models/VacancyModel';
 import { Button } from '../../shared/Button/Button';
 import moment from 'moment';
 

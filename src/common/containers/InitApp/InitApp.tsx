@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchProfileAction } from '../../redux/actions/ProfileActions';
+import { fetchProfileAction } from '../../redux/actions/Profile/ProfileActions';
 import useLoader from '../../hooks/useLoader';
 
 interface InitAppProps {

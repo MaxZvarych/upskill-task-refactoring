@@ -1,7 +1,7 @@
 import { instance } from '../configs/axios.config';
 import { UserErrorDto } from '../interfaces/UserModel';
 import { UsersPayload } from '../interfaces/UsersPayload';
-import { UsersAction } from '../redux/actions/UsersActions';
+import { UsersAction } from '../redux/actions/Profile/UsersActions';
 
 const USERS_URI = '/users';
 

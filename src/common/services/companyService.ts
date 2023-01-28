@@ -1,5 +1,5 @@
 import { instance } from '../configs/axios.config';
-import { AddCompanyDto } from '../dto/AddCompanyDto';
+import { AddCompanyDto } from '../dto/AddDTO/AddCompanyDto';
 import { getFormData } from '../utils/getFormData';
 
 const COMPANY_URI = '/companies';

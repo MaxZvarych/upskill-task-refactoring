@@ -1,4 +1,4 @@
-import { StateProps } from '../../interfaces/StateProps';
+import { StateProps } from '../../interfaces/Props/StateProps';
 
 export const getVacancySelector = (state: StateProps) =>
   state.vacancyReducer.vacancy?.data;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import noavatar from '../../../../assets/images/no-avatar.png';
-import { CurrentUserTags } from '../../../components/CurrentUser/CurrentUserTags';
-import { User } from '../../../interfaces/UserModel';
+import { CurrentUserTags } from '../../../components/User/CurrentUser/CurrentUserTags';
+import { User } from '../../../interfaces/User/UserModel';
 import classNames from 'classnames';
 import moment from 'moment';
 

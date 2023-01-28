@@ -1,5 +1,5 @@
 import { instance } from '../configs/axios.config';
-import { AddVacancyDto } from '../dto/AddVacancyDto';
+import { AddVacancyDto } from '../dto/AddDTO/AddVacancyDto';
 
 const VACANCY_URI = '/vacancies';
 

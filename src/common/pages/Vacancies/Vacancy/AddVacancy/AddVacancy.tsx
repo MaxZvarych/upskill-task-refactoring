@@ -7,7 +7,7 @@ import {
 import { useParams, useHistory } from 'react-router';
 import InputField from '../../../../shared/Input/InputField';
 import { useFormik } from 'formik';
-import { AddVacancyDto } from '../../../../dto/AddVacancyDto';
+import { AddVacancyDto } from '../../../../dto/AddDTO/AddVacancyDto';
 import { Button } from '../../../../shared/Button/Button';
 import { SelectField } from '../../../../shared/Input/SelectField';
 import { workType, descConfig } from '../../../../constants/vacancyConsts';
@@ -17,7 +17,7 @@ import { addVacancySchema } from '../../../../utils/validation/addVacancySchema'
 
 import FroalaEditorComponent from 'react-froala-wysiwyg';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAddVacancyAction } from '../../../../redux/actions/OperateVacancyActions';
+import { fetchAddVacancyAction } from '../../../../redux/actions/Vacancies/OperateVacancyActions';
 import { addVacancyStateSelector } from '../../../../redux/selectors/vacancySelector';
 import { Loader } from '../../../../shared/Loader/Loader';
 import { toast } from 'react-toastify';
@@ -25,7 +25,7 @@ import { MessageNotification } from '../../../../shared/MessageNotification/Mess
 
 import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
-import { resetVacancyAction } from '../../../../redux/actions/VacancyActions';
+import { resetVacancyAction } from '../../../../redux/actions/Vacancies/VacancyActions';
 
 export const AddVacancy = () => {
   const { companyUrl } = useParams<{ companyUrl: string }>();

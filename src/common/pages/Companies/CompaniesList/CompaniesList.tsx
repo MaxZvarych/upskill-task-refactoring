@@ -7,7 +7,7 @@ import { sortByDate } from '../../../constants/sortConsts';
 import { customStyles } from '../../../constants/userConsts';
 import { useFilter } from '../../../hooks/filters/useFilter';
 import { Company } from '../../../interfaces/CompanyModel';
-import { getCompaniesLoadAction } from '../../../redux/actions/CompaniesActions';
+import { getCompaniesLoadAction } from '../../../redux/actions/Company/CompaniesActions';
 import {
   companiesStateSelector,
   companiesStatusSelector,
@@ -22,7 +22,7 @@ import InputField from '../../../shared/Input/InputField';
 import { Button } from '../../../shared/Button/Button';
 
 import './CompaniesList.scss';
-import { InformationToolTip } from '../../../components/ToolTips/InformationToolTip';
+import { InformationToolTip } from '../../../shared/ToolTips/InformationToolTip';
 
 const CompaniesList = () => {
   const { Range } = Slider;

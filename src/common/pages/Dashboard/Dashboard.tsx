@@ -9,8 +9,8 @@ import {
   PageCenterBlockContainer,
 } from '../../containers/DefaultPage/DefaultPageCenter';
 import { useFilter } from '../../hooks/filters/useFilter';
-import { Vacancy } from '../../interfaces/VacancyModel';
-import { getFollowVacanciesLoadAction } from '../../redux/actions/FollowVacancies';
+import { Vacancy } from '../../interfaces/Models/VacancyModel';
+import { getFollowVacanciesLoadAction } from '../../redux/actions/Vacancies/FollowVacancies';
 import {
   getFollowVacanciesSelector,
   getFollowVacanciesInfoSelector,

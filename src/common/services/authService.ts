@@ -1,5 +1,5 @@
 import { instance } from '../configs/axios.config';
-import { AuthFormComponent } from '../interfaces/AuthFormComponent';
+import { AuthFormComponent } from '../interfaces/Auth/AuthFormComponent';
 
 const SIGNUP_URI = '/auth/sign-up';
 const SIGNIN_URI = '/auth/sign-in';

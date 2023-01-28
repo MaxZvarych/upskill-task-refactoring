@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import EditProfileForm from '../../../components/EditProfileForm/EditProfileForm';
+import EditProfileForm from '../../../components/User/Profile/EditProfileForm/EditProfileForm';
 import { MessageNotification } from '../../../shared/MessageNotification/MessageNotification';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   getEditProfileSelector,
   getProfileSelector,
-} from '../../../redux/selectors/profileSelector';
+} from '../../../redux/selectors/Profile/profileSelector';
 import { Loader } from '../../../shared/Loader/Loader';
-import { editProfileResetAction } from '../../../redux/actions/EditProfileActions';
+import { editProfileResetAction } from '../../../redux/actions/Profile/EditProfileActions';
 
 import '../UserProfile.scss';
 import './EditProfile.scss';

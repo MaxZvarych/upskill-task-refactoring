@@ -8,7 +8,7 @@ import {
   PageCenterBlockContainer,
 } from '../../../containers/DefaultPage/DefaultPageCenter';
 import { BlockItemInfo } from '../../../shared/PageBlock/BlockItemInfo';
-import { fetchVacancyAction } from '../../../redux/actions/VacancyActions';
+import { fetchVacancyAction } from '../../../redux/actions/Vacancies/VacancyActions';
 import { useParams, useHistory } from 'react-router';
 import {
   getVacancySelector,
@@ -16,9 +16,9 @@ import {
   addVacancyStateSelector,
 } from '../../../redux/selectors/vacancySelector';
 import DeleteButton from '../../../components/DeleteItem/DeleteButton';
-import { fetchDeleteVacancyAction } from '../../../redux/actions/OperateVacancyActions';
+import { fetchDeleteVacancyAction } from '../../../redux/actions/Vacancies/OperateVacancyActions';
 import { toast } from 'react-toastify';
-import { getProfileSelector } from '../../../redux/selectors/profileSelector';
+import { getProfileSelector } from '../../../redux/selectors/Profile/profileSelector';
 
 import './Vacancy.scss';
 

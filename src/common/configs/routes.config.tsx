@@ -1,12 +1,12 @@
 import Home from '../pages/Home';
 import SignUp from '../pages/Auth/SignUp/SignUp';
 import SignIn from '../pages/Auth/SignIn/SignIn';
-import { RenderRoutes } from '../components/Routes/Routes';
+import { RenderRoutes } from '../components/Routing/Routes/Routes';
 import Dashboard from '../pages/Dashboard/Dashboard';
 import UserProfile from '../pages/Users/UserProfile/UserProfile';
 import NotFound from '../pages/NotFound/NotFound';
 import EditProfile from '../pages/Users/EditProfile/EditProfile';
-import { RenderRoutesProps } from '../interfaces/Route';
+import { RenderRoutesProps } from '../interfaces/Navigation/Route';
 import Users from '../pages/Users/Users/Users';
 import Company from '../pages/Companies/Company/Company';
 import { AddCompany } from '../pages/Companies/Company/AddCompany';

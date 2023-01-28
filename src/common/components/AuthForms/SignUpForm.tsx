@@ -4,7 +4,7 @@ import InputField from '../../shared/Input/InputField';
 import Icon from '../../shared/Icon/Icon';
 import InputPasswordField from '../../shared/Input/InputPasswordField';
 import { Button } from '../../shared/Button/Button';
-import { AuthFormComponent } from '../../interfaces/AuthFormComponent';
+import { AuthFormComponent } from '../../interfaces/Auth/AuthFormComponent';
 import { useDispatch } from 'react-redux';
 import { signUpLoadAction } from '../../redux/actions/SignUpActions';
 import { signUpSchema } from '../../utils/validation/signUpSchema';

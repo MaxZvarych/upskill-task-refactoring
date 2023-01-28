@@ -4,9 +4,9 @@ import InputField from '../../../shared/Input/InputField';
 import Icon from '../../../shared/Icon/Icon';
 import InputPasswordField from '../../../shared/Input/InputPasswordField';
 import { Button } from '../../../shared/Button/Button';
-import { AuthFormComponent } from '../../../interfaces/AuthFormComponent';
+import { AuthFormComponent } from '../../../interfaces/Auth/AuthFormComponent';
 import { useDispatch } from 'react-redux';
-import { signInLoadAction } from '../../../redux/actions/SignInActions';
+import { signInLoadAction } from '../../../redux/actions/Auth/SignInActions';
 import { signInSchema } from '../../../utils/validation/signInSchema';
 
 const SignInForm = () => {

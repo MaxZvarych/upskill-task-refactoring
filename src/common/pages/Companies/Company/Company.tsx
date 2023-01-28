@@ -5,7 +5,7 @@ import {
   delCompanyAction,
   fetchCompanyAction,
   fetchFollowCompanyAction,
-} from '../../../redux/actions/GetCompanyActions';
+} from '../../../redux/actions/Company/GetCompanyActions';
 import {
   getCompanySelector,
   getCompanyStateSelector,
@@ -14,7 +14,7 @@ import {
 } from '../../../redux/selectors/companySelector';
 import { Loader } from '../../../shared/Loader/Loader';
 import { VacancyCompanyItem } from '../../../components/Vacancies/VacancyCompanyItem';
-import { Vacancy } from '../../../interfaces/VacancyModel';
+import { Vacancy } from '../../../interfaces/Models/VacancyModel';
 import { DefaultPageContainer } from '../../../containers/DefaultPage/DefaultPage';
 import { DefaultPageLeftContainer } from '../../../containers/DefaultPage/DefaultPageLeft';
 import {
@@ -24,7 +24,7 @@ import {
 import { CompanyTitle } from '../../../components/Company/CompanyTitle';
 import { BlockItemInfo } from '../../../shared/PageBlock/BlockItemInfo';
 import { Link } from 'react-router-dom';
-import { getProfileSelector } from '../../../redux/selectors/profileSelector';
+import { getProfileSelector } from '../../../redux/selectors/Profile/profileSelector';
 import { NotFoundData } from '../../../components/NotFoundData/NotFoundData';
 
 import './Company.scss';

@@ -1,13 +1,13 @@
 import { all } from 'redux-saga/effects';
-import profileWatcher from './profileSaga';
-import signInWatcher from './signInSaga';
-import signUpWatcher from './signUpSaga';
-import editUserWatcher from './editUserSaga';
-import currentUserWatcher from './currentUserSaga';
-import usersWatcher from './getUsersSaga';
-import editPhotoUserWatcher from './editPhotoUserSaga';
-import companyWatcher from './companySaga';
-import vacancyWatcher from './vacancySaga';
+import profileWatcher from './Profile/profileSaga';
+import signInWatcher from './Auth/signInSaga';
+import signUpWatcher from './Auth/signUpSaga';
+import editUserWatcher from './Profile/editUserSaga';
+import currentUserWatcher from './Profile/currentUserSaga';
+import usersWatcher from './Profile/getUsersSaga';
+import editPhotoUserWatcher from './Profile/editPhotoUserSaga';
+import companyWatcher from './Company/companySaga';
+import vacancyWatcher from './Vacancies/vacancySaga';
 
 export default function* rootSaga() {
   yield all([

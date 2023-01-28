@@ -8,23 +8,23 @@ import {
 import { DefaultPageLeftContainer } from '../../../containers/DefaultPage/DefaultPageLeft';
 import { useFilter } from '../../../hooks/filters/useFilter';
 import useFilterItem from '../../../hooks/filters/useFilterItem';
-import UserFilter from '../../../components/Users/UserFilter';
+import UserFilter from '../../../components/User/Users/UserFilter';
 import { customStyles } from '../../../constants/userConsts';
 import { sortByDate } from '../../../constants/sortConsts';
 import Select from 'react-select';
 import { VacancyItem } from '../../../components/Vacancies/VacancyItem';
 import { useDispatch, useSelector } from 'react-redux';
-import { getVacanciesLoadAction } from '../../../redux/actions/VacanciesActions';
+import { getVacanciesLoadAction } from '../../../redux/actions/Vacancies/VacanciesActions';
 import {
   getVacanciesInfoSelector,
   getVacanciesSelector,
 } from '../../../redux/selectors/vacancySelector';
 import { Loader } from '../../../shared/Loader/Loader';
-import { Vacancy } from '../../../interfaces/VacancyModel';
+import { Vacancy } from '../../../interfaces/Models/VacancyModel';
 import { Pagination } from '../../../components/Pagination/Pagination';
 
 import './Vacancies.scss';
-import { InformationToolTip } from '../../../components/ToolTips/InformationToolTip';
+import { InformationToolTip } from '../../../shared/ToolTips/InformationToolTip';
 
 const VacanciesList = () => {
   const history = useHistory();

@@ -6,7 +6,7 @@ import { useFormik } from 'formik';
 import { uploadImageSchema } from '../../../utils/validation/uploadImageSchema';
 import ErrorNotification from '../../MessageNotification/ErrorNotification';
 import { useDispatch } from 'react-redux';
-import { editPhotoLoadAction } from '../../../redux/actions/EditPhotoUserActions';
+import { editPhotoLoadAction } from '../../../redux/actions/Profile/EditPhotoUserActions';
 
 interface EditPhotoProps {
   id: string | number;

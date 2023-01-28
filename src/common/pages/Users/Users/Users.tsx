@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Select from 'react-select';
 import useFilterItem from '../../../hooks/filters/useFilterItem';
-import { User } from '../../../interfaces/UserModel';
-import { getUsersLoadAction } from '../../../redux/actions/UsersActions';
+import { User } from '../../../interfaces/User/UserModel';
+import { getUsersLoadAction } from '../../../redux/actions/Profile/UsersActions';
 import {
   getUsersInfoSelector,
   getUsersSelector,
-} from '../../../redux/selectors/usersSelector';
+} from '../../../redux/selectors/Profile/usersSelector';
 import { Loader } from '../../../shared/Loader/Loader';
 import { UserItem } from './UserItem';
 import { Pagination } from '../../../components/Pagination/Pagination';
@@ -15,10 +15,10 @@ import { useFilter } from '../../../hooks/filters/useFilter';
 import { customStyles } from '../../../constants/userConsts';
 import { sortByDate } from '../../../constants/sortConsts';
 import { useHistory } from 'react-router';
-import UserFilter from '../../../components/Users/UserFilter';
+import UserFilter from '../../../components/User/Users/UserFilter';
 
 import './Users.scss';
-import { InformationToolTip } from '../../../components/ToolTips/InformationToolTip';
+import { InformationToolTip } from '../../../shared/ToolTips/InformationToolTip';
 
 const Users = () => {
   const history = useHistory();

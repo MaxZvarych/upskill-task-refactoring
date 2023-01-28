@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerProps } from '../../interfaces/ContainerProps';
+import { ContainerProps } from '../../interfaces/Props/ContainerProps';
 
 export const DefaultPageContainer = ({
   children,

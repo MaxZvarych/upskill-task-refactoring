@@ -7,9 +7,9 @@ import ModalEditPhoto from '../../../shared/Modal/ModalEditPhoto/ModalEditPhoto'
 import useModal from '../../../hooks/useModal';
 import ErrorNotification from '../../../shared/MessageNotification/ErrorNotification';
 import { Button } from '../../../shared/Button/Button';
-import { AddCompanyDto } from '../../../dto/AddCompanyDto';
+import { AddCompanyDto } from '../../../dto/AddDTO/AddCompanyDto';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAddCompanyAction } from '../../../redux/actions/AddCompanyActions';
+import { fetchAddCompanyAction } from '../../../redux/actions/Company/AddCompanyActions';
 import { addCompanyStateSelector } from '../../../redux/selectors/companySelector';
 import { useHistory } from 'react-router';
 import { Loader } from '../../../shared/Loader/Loader';
