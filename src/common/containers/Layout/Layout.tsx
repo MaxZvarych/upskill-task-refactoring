@@ -1,4 +1,4 @@
-import React , { Suspense } from 'react';
+import React, { Suspense } from 'react';
 import Header from '../../components/Semantics/Header/Header';
 import { Switch, useLocation } from 'react-router-dom';
 import Navigation from '../../components/Routing/Navigation/Navigation';
@@ -25,7 +25,7 @@ const Layout = () => {
         <Switch>
           {routes.list.map((route: ExtendedRouteProps, i: number) => (
             // fallback component is rendered until our main component is loaded
-			      <Suspense fallback={<div>Loading</div>}>
+            <Suspense fallback={<div>Loading</div>}>
               <RouteWithSubRoutes key={i + route.path} {...route} />
             </Suspense>
           ))}

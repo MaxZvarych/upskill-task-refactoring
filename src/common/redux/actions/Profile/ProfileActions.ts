@@ -1,4 +1,4 @@
-import { User } from "../../../interfaces/User/UserModel";
+import { User } from '../../../interfaces/User/UserModel';
 
 export const SET_PROFILE = 'SET_PROFILE';
 export const DELETE_PROFILE = 'DELETE_PROFILE';
