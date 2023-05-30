@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "../../../styles/variables";
 
 .footer {
   position: absolute;
@@ -21,13 +21,13 @@
         height: 2rem;
         background-size: 2rem 2rem;
         &.icon-fb {
-          background-image: url("../../../assets/icons/fb-footer.svg");
+          background-image: url("../../../../assets/icons/fb-footer.svg");
         }
         &.icon-ld {
-          background-image: url("../../../assets/icons/ld.svg");
+          background-image: url("../../../../assets/icons/ld.svg");
         }
         &.icon-im {
-          background-image: url("../../../assets/icons/im.svg");
+          background-image: url("../../../../assets/icons/im.svg");
         }
       }
       &--item {
@@ -35,9 +35,7 @@
         + .footer__inner-social--item {
           padding-left: 2em;
         }
-  
       }
     }
-
   }
 }

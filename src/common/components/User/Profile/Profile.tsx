@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import noavatar from '../../../assets/images/no-avatar.png';
+import noavatar from '../../../../assets/images/no-avatar.png';
 import Icon from '../../../shared/Icon/Icon';
 import classNames from 'classnames';
 import { ProfileMenu } from './ProfileMenu';

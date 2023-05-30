@@ -7,11 +7,11 @@ const Features = () => (
   <div className="features">
     <div className="features__content">
       <h1>
-        Job search has become much easier with <span>OmegaWORK</span>
+        Job search has become much easier with <span>CViewer</span>
       </h1>
       <p>
         Provide employers searching for all your needs with ease and speed using
-        OmegaWORK discover interesting features from us. Every day, we help
+        CViewer discover interesting features from us. Every day, we help
         hundreds of thousands of people to make a difference in their lives.
       </p>
       <ul className="features__content-menu">

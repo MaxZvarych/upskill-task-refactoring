@@ -1,9 +1,13 @@
 @keyframes appear {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@import "../../styles/variables";
+@import "../../../styles/variables";
 
 .profile {
   position: relative;
@@ -26,7 +30,7 @@
     }
   }
   &__outer {
-    animation: ease .3s appear;
+    animation: ease 0.3s appear;
     font-size: 0.9rem;
     position: absolute;
     min-width: 9rem;

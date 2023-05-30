@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Company } from '../../../interfaces/Models/CompanyModel';
-import nocompany from '../../../assets/images/no-company.png';
+import nocompany from '../../../../assets/images/no-company.png';
 
 interface CurrentUserFollowingProps {
   following: Array<Company> | null;
