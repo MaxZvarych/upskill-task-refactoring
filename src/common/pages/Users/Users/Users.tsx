@@ -14,7 +14,7 @@ import { Pagination } from '../../../components/Pagination/Pagination';
 import { useFilter } from '../../../hooks/filters/useFilter';
 import { customStyles } from '../../../constants/userConsts';
 import { sortByDate } from '../../../constants/sortConsts';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 import UserFilter from '../../../components/User/Users/UserFilter';
 
 import './Users.scss';

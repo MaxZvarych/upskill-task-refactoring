@@ -12,7 +12,7 @@ import { editProfileLoadAction } from '../../../../redux/actions/Profile/EditPro
 import { useDispatch, useSelector } from 'react-redux';
 import { getProfileSelector } from '../../../../redux/selectors/Profile/profileSelector';
 import { jobStatus, positions } from '../../../../constants/userConsts';
-import { Prompt } from 'react-router';
+import { Prompt } from 'react-router-dom';
 import { Location } from 'history';
 import { EditProfileFormProps } from '../../../../interfaces/User/EditProfileFormProps';
 

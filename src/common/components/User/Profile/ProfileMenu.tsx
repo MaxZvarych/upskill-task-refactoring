@@ -3,7 +3,7 @@ import { User } from '../../../interfaces/User/UserModel';
 import Icon from '../../../shared/Icon/Icon';
 import { useDispatch } from 'react-redux';
 import { delProfileAction } from '../../../redux/actions/Profile/ProfileActions';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 interface ProfileProps {

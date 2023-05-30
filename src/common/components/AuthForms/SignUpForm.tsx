@@ -10,7 +10,7 @@ import { signUpLoadAction } from '../../redux/actions/Auth/SignUpActions';
 import { signUpSchema } from '../../utils/validation/signUpSchema';
 import { SwitchBox } from '../../shared/SwitchBox/SwitchBox';
 import { useState } from 'react';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getSignUpSelector } from '../../redux/selectors/authSelector';
 import { useEffect } from 'react';

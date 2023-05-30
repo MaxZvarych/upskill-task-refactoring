@@ -9,7 +9,7 @@ import {
 } from '../../../containers/DefaultPage/DefaultPageCenter';
 import { BlockItemInfo } from '../../../shared/PageBlock/BlockItemInfo';
 import { fetchVacancyAction } from '../../../redux/actions/Vacancies/VacancyActions';
-import { useParams, useHistory } from 'react-router';
+import { useParams, useHistory } from 'react-router-dom';
 import {
   getVacancySelector,
   getVacancyStateSelector,

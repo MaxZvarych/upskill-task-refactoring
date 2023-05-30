@@ -11,7 +11,7 @@ import { AddCompanyDto } from '../../../dto/AddDTO/AddCompanyDto';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAddCompanyAction } from '../../../redux/actions/Company/AddCompanyActions';
 import { addCompanyStateSelector } from '../../../redux/selectors/companySelector';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 import { Loader } from '../../../shared/Loader/Loader';
 import { MessageNotification } from '../../../shared/MessageNotification/MessageNotification';
 import { addCompanySchema } from '../../../utils/validation/addCompanySchema';

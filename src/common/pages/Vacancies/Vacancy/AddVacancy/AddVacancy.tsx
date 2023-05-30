@@ -4,7 +4,7 @@ import {
   DefaultPageCenterContainer,
   PageCenterBlockContainer,
 } from '../../../../containers/DefaultPage/DefaultPageCenter';
-import { useParams, useHistory } from 'react-router';
+import { useParams, useHistory } from 'react-router-dom';
 import InputField from '../../../../shared/Input/InputField';
 import { useFormik } from 'formik';
 import { AddVacancyDto } from '../../../../dto/AddDTO/AddVacancyDto';
