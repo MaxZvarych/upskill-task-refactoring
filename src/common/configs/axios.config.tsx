@@ -4,11 +4,13 @@ import { validateRoutes } from '../utils/validateRoutes';
 
 const headers = {
   Accept: 'application/json',
+  Origin: `${process.env.REACT_APP_ORIGIN_URI}`,
   'X-Requested-With': 'XMLHttpRequest',
   'Access-Control-Allow-Methods': 'GET,POST,PUT,DELETE,OPTIONS',
   'Access-Control-Allow-Headers':
     'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With',
 };
+
 
 export const instance: AxiosInstance = axios.create({
   baseURL: process.env.REACT_APP_API_URI,

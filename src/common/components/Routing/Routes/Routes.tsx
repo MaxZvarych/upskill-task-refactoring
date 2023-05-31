@@ -10,7 +10,7 @@ import { isStandardRoutes } from '../../../utils/validateRoutes';
 
 export const RouteWithSubRoutes = (route: RenderRoutesProps) => {
   const { me } = useSelector(getProfileSelector);
-
+  console.log(route)
   return (
     <Route
       path={route.path}

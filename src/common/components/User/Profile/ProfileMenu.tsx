@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { delProfileAction } from '../../../redux/actions/Profile/ProfileActions';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
 interface ProfileProps {
   me: User;
 }
@@ -17,6 +16,7 @@ export const ProfileMenu = ({ me }: ProfileProps) => {
     dispatch(delProfileAction());
     history.push('/');
   };
+
   return (
     <div className="profile__outer">
       <nav>
@@ -38,7 +38,7 @@ export const ProfileMenu = ({ me }: ProfileProps) => {
           </li>
           <div className="profile__outer-line">
             <li className="profile__outer-item" onClick={handleSignOut}>
-              <Link to="/">
+              <Link to={`${me?'/dashboard':'/'}`}>
                 <Icon iconName="icon-logout" />
                 Logout
               </Link>
