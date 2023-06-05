@@ -15,10 +15,17 @@ import { useSelector } from 'react-redux';
 import { getSignUpSelector } from '../../redux/selectors/authSelector';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { AiFillCamera, AiFillDelete } from "react-icons/ai";
+
+import ImageUploader from "react-image-upload";
+import "react-image-upload/dist/index.css";
+import { checkAge } from '../../services/aiAgeRecognitionService';
+
 
 const SignUpForm = () => {
   const dispatch = useDispatch();
   const [isToggled, setIsToggled] = useState(false);
+  const [expectedAge, setExpectedAge] = useState(null);
   const switchText = {
     before: 'Employer',
     after: 'Applicant',
@@ -26,6 +33,10 @@ const SignUpForm = () => {
   const [isSubmit, setIsSubmit] = useState(false);
   const history = useHistory();
   const { isFetching, isError, errorMessage } = useSelector(getSignUpSelector);
+  const processAgeByPhotoAnalysis = async (img: any) => {
+    const result = await checkAge(img)
+    if (result) setExpectedAge(result.detections[0].age)
+  }
   useEffect(() => {
     if (isFetching && isSubmit && !isError) {
       history.push('/sign-in');
@@ -57,6 +68,19 @@ const SignUpForm = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
+      <h5 style={{  marginBottom: "10px" }} 
+>Set your photo for additional analytics</h5>
+        <ImageUploader
+          style={{ height: 200, width: 200, background: "rgb(0 182 255)", marginBottom: "10px" }} 
+          deleteIcon={<AiFillDelete />}
+          uploadIcon={<AiFillCamera />}
+          onFileAdded={processAgeByPhotoAnalysis} 
+          onFileRemoved={() => setExpectedAge(null)}
+        />
+        {expectedAge && <> 
+        <h5 style={{  marginBottom: "10px" }}>Your expected age by photo provided is : {expectedAge} years </h5>
+        </>
+        }
         <InputField
           type="text"
           placeholder="Enter an email"
