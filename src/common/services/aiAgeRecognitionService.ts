@@ -18,8 +18,8 @@ export const checkAge =  async (image: any) => {
     method: "post",
     url: 'https://promity-age-and-gender-recognition.p.rapidapi.com/age_gender/process_file',
     headers: {
-      'X-RapidAPI-Key': 'a6de7896c3msh2615fb08f6c602cp1b5c5ajsne893b5e2d801',
-      'X-RapidAPI-Host': 'promity-age-and-gender-recognition.p.rapidapi.com'},
+      'X-RapidAPI-Key': `${process.env.REACT_APP_RAPID_API_KEY}`,
+      'X-RapidAPI-Host': `${process.env.REACT_APP_RAPID_API_KEY}`},
     data: data
   };
 
