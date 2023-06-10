@@ -37,6 +37,24 @@ export const UserItem = ({ user, filter }: UserItemProps) => (
       >
         {user.status}
       </span>
+      {user && user.age && (
+        <span
+        className=
+          'users__item-main--status'
+        
+      >
+        {user.age} Years
+      </span>
+      )}
+      {user && user.sex && (
+        <span
+        className=
+          'users__item-main--status'
+        
+      >
+        {user.sex}
+      </span>
+      )}
       {user.salary && (
         <span className="users__item-main--salary">from {user.salary}$</span>
       )}

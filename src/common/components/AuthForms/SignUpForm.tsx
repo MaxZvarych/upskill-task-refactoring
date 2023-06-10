@@ -25,7 +25,8 @@ import { checkAge } from '../../services/aiAgeRecognitionService';
 const SignUpForm = () => {
   const dispatch = useDispatch();
   const [isToggled, setIsToggled] = useState(false);
-  const [expectedAge, setExpectedAge] = useState(null);
+  const [expectedAge, setExpectedAge] = useState(undefined);
+  const [expectedSex, setExpectedSex] = useState("");
   const switchText = {
     before: 'Employer',
     after: 'Applicant',
@@ -35,7 +36,15 @@ const SignUpForm = () => {
   const { isFetching, isError, errorMessage } = useSelector(getSignUpSelector);
   const processAgeByPhotoAnalysis = async (img: any) => {
     const result = await checkAge(img)
-    if (result) setExpectedAge(result.detections[0].age)
+    console.log(result)
+    if (result) {
+      setExpectedAge(result.detections[0].age)
+      setExpectedSex(result.detections[0].gender.F>=0.5?"Female":"Male")
+    }
+  }
+  const onFileRemoved = async () => {
+    setExpectedAge(undefined)
+    setExpectedSex("")
   }
   useEffect(() => {
     if (isFetching && isSubmit && !isError) {
@@ -60,6 +69,8 @@ const SignUpForm = () => {
         signUpLoadAction({
           ...values,
           role: isToggled ? switchText.before : switchText.after,
+          age: expectedAge,
+          sex: expectedSex
         }),
       );
       setIsSubmit(true);
@@ -75,10 +86,14 @@ const SignUpForm = () => {
           deleteIcon={<AiFillDelete />}
           uploadIcon={<AiFillCamera />}
           onFileAdded={processAgeByPhotoAnalysis} 
-          onFileRemoved={() => setExpectedAge(null)}
+          onFileRemoved={onFileRemoved}
         />
         {expectedAge && <> 
         <h5 style={{  marginBottom: "10px" }}>Your expected age by photo provided is : {expectedAge} years </h5>
+        </>
+        }
+        {expectedSex && <> 
+        <h5 style={{  marginBottom: "10px" }}>Your expected sex by photo provided is : {expectedSex} </h5>
         </>
         }
         <InputField

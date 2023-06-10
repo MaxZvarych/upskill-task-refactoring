@@ -8,6 +8,8 @@ export interface User {
   status?: string;
   avatar?: string;
   city?: string;
+  sex?: string;
+  age?: number;
   about?: string;
   tags?: string[] | string;
   position?: string;

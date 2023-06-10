@@ -5,6 +5,8 @@ export interface SealedAuthFormComponent {
   password: string;
   confirmPassword?: string;
   role?: string;
+  sex?: string;
+  age? : number;
 }
 
 export interface AuthFormComponent extends SealedAuthFormComponent {
